@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florida Dynamics - Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto Mono', monospace;
+      background-color: black;
+      color: white;
+      height: 100%;
+    }
+
+    header {
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      padding: 0px 0px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100% - 64px); /* Adjusted for new header height */
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .product {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      background-color: #0E0E0E;
+      margin-bottom: 20px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow properties */
+    }
+
+    .product-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .product-subtitle {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="store.html">STORE</a>
+    </nav>
+  </header>
+  <main>
+    <div class="product-grid">
+      <div class="product">
+        <div class="product-image"></div>
+        <div class="product-name">MK2</div>
+        <div class="product-subtitle">"CATCH'EM"</div>
+        <div class="product-description">description (encrypted)</div>
+      </div>
+      <div class="product">
+        <div class="product-image"></div>
+        <div class="product-name">MK1</div>
+        <div class="product-subtitle">"PIZZA"</div>
+        <div class="product-description">description (encrypted)</div>
+      </div>
+      <div class="product">
+        <div class="product-image"></div>
+        <div class="product-name">MK3</div>
+        <div class="product-subtitle">(encrypted)</div>
+        <div class="product-description">description (encrypted)</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
